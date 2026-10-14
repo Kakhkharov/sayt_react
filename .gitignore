@@ -1,1 +1,14 @@
 /react
+node_modules
+dist
+dist-ssr
+*.local
+.vercel
+*.zip
+*.rar
+*.7z
+*.docx
+*.xlsx
+~$*
+.DS_Store
+Thumbs.db

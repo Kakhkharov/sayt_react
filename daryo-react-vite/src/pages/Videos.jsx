@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
+import { getAssetPath } from '../utils/assets';
 
 const videoData = [
+    {
+        id: 7,
+        title: "Ustozga ehtirom-millatga ehtirom",
+        date: "2026-10-01T09:00:00",
+        duration: "01:52",
+        thumbnail: "/images/01.jpg",
+        video: "/images/ustozlar_bayrami.mp4",
+        views: "2.5k"
+    },
+    {
+        id: 6,
+        title: "Mustaqillik buyuk neʼmat va erkinlikdir",
+        date: "2026-08-20T12:00:00",
+        duration: "02:15",
+        thumbnail: "/images/reklama.jpg",
+        video: "/images/video2.mp4",
+        views: "1.8k"
+    },
     {
         id: 1,
         title: "Prezident maktabida Navro'z shodiyonasi",
@@ -45,6 +64,8 @@ const videoData = [
 ];
 
 export default function Videos() {
+    const [selectedVideo, setSelectedVideo] = useState(null);
+
     // Sort videos by date (newest first)
     const sortedVideos = [...videoData].sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -65,11 +86,19 @@ export default function Videos() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {sortedVideos.map((video) => (
-                            <div key={video.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-slate-100">
+                            <div 
+                                key={video.id} 
+                                onClick={() => setSelectedVideo(video)}
+                                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-slate-100 cursor-pointer"
+                            >
                                 <div className="relative aspect-video bg-slate-200">
-                                    <img src={video.thumbnail} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt={video.title} />
+                                    <img 
+                                        src={getAssetPath(video.thumbnail)} 
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                        alt={video.title} 
+                                    />
                                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                                        <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity scale-90 group-hover:scale-100">
+                                        <div className="w-16 h-16 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity scale-90 group-hover:scale-105 shadow-lg">
                                             <span className="material-symbols-outlined text-white text-4xl filled">play_arrow</span>
                                         </div>
                                     </div>
@@ -98,10 +127,56 @@ export default function Videos() {
                 </div>
 
                 {/* Sidebar */}
-                <div className="hidden lg:block">
+                <div className="hidden lg:block shrink-0">
                     <Sidebar />
                 </div>
             </div>
+
+            {/* Video Modal Player */}
+            {selectedVideo && (
+                <div 
+                    className="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-[300] flex items-center justify-center p-4 md:p-8 animate-fade-in"
+                    onClick={() => setSelectedVideo(null)}
+                >
+                    <div 
+                        className="bg-slate-900 rounded-2xl overflow-hidden max-w-4xl w-full shadow-2xl border border-white/10 relative"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <div className="flex items-center justify-between p-4 bg-slate-900/90 border-b border-white/10 text-white">
+                            <h3 className="font-bold text-base md:text-lg text-slate-100 pr-4 line-clamp-1">
+                                {selectedVideo.title}
+                            </h3>
+                            <button 
+                                onClick={() => setSelectedVideo(null)}
+                                className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                                aria-label="Yopish"
+                            >
+                                ✕
+                            </button>
+                        </div>
+
+                        <div className="relative aspect-video bg-black flex items-center justify-center">
+                            {selectedVideo.video ? (
+                                <video 
+                                    controls 
+                                    autoPlay 
+                                    playsInline
+                                    poster={getAssetPath(selectedVideo.thumbnail)}
+                                    className="w-full h-full object-contain"
+                                >
+                                    <source src={getAssetPath(selectedVideo.video)} type="video/mp4" />
+                                    Brauzeringiz videoni qo'llab-quvvatlamaydi.
+                                </video>
+                            ) : (
+                                <div className="text-center p-8 text-slate-400 space-y-3">
+                                    <span className="material-symbols-outlined text-5xl text-slate-500">movie_off</span>
+                                    <p className="text-sm">Ushbu video lavha tez orada taqdim etiladi.</p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            )}
         </main>
     );
 }

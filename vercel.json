@@ -1,0 +1,10 @@
+{
+  "buildCommand": "cd daryo-react-vite && npm run build",
+  "outputDirectory": "daryo-react-vite/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

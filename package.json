@@ -1,0 +1,7 @@
+{
+  "name": "pm-termiz-sayt",
+  "private": true,
+  "scripts": {
+    "build": "cd daryo-react-vite && npm run build"
+  }
+}
