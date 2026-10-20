@@ -1,4 +1,5 @@
 {
+  "installCommand": "cd daryo-react-vite && npm install",
   "buildCommand": "cd daryo-react-vite && npm run build",
   "outputDirectory": "daryo-react-vite/dist",
   "rewrites": [
