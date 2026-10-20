@@ -4,6 +4,33 @@ import { getAssetPath } from '../utils/assets';
 
 const videoData = [
     {
+        id: 10,
+        title: "Termiz garnizoni harbiy xizmatchisi bilan “Uch avlod uchrashuvi” tadbiri bo‘lib o‘tdi",
+        date: "2026-10-13T10:00:00",
+        duration: "02:10",
+        thumbnail: "/images/school.jpg",
+        video: "/images/video5.mp4",
+        views: "1.4k"
+    },
+    {
+        id: 9,
+        title: "“Rahbar kubogi” sport musobaqasining Surxondaryo viloyati bosqichi bo‘lib o‘tdi",
+        date: "2026-10-13T09:00:00",
+        duration: "01:45",
+        thumbnail: "/images/school.jpg",
+        video: "/images/video4.mp4",
+        views: "1.1k"
+    },
+    {
+        id: 8,
+        title: "Chavondozlik mahorat maktabi bilan hamkorlik",
+        date: "2026-09-11T10:00:00",
+        duration: "01:30",
+        thumbnail: "/images/ot_0.jpg",
+        video: "/images/video3.mp4",
+        views: "1.2k"
+    },
+    {
         id: 7,
         title: "Ustozga ehtirom-millatga ehtirom",
         date: "2026-10-01T09:00:00",

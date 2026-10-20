@@ -189,7 +189,6 @@ const rawNewsData = [
         id: 12,
         title: "Ustozga ehtirom-millatga ehtirom",
         date: "1 Oktabr, 2026",
-        isToday: true,
         category: "Tadbir",
         image: "/images/01.jpg",
         images: ["/images/01.jpg"],
@@ -201,6 +200,174 @@ const rawNewsData = [
             <p>Ustoz — qalblarga ilm va ma’rifat nurini olib kiruvchi, kelajak avlod tarbiyasiga beqiyos hissa qo‘shuvchi ulug‘ insondir.</p>
             <p>Aziz ustozlar! Sizlarni 1-oktabr — O‘qituvchilar va murabbiylar kuni bilan chin qalbimizdan muborakbod etamiz!</p>
             <p>Sizlarga mustahkam sog‘lik, oilaviy xotirjamlik, sharafli va mas’uliyatli faoliyatingizda ulkan zafarlar tilaymiz!</p>
+        `
+    },
+    {
+        id: 13,
+        title: "XALQARO HAMKORLIK: UNESCO tarixida ilk bor ustozlar vazirlar panelida",
+        date: "11 Sentyabr, 2026",
+        category: "Xalqaro",
+        image: "/images/durdona_0.jpg",
+        images: [
+            "/images/durdona_0.jpg",
+            "/images/durdona_1.jpg",
+            "/images/durdona_2.jpg",
+            "/images/durdona_3.jpg"
+        ],
+        desc: "UNESCO tarixida ilk bor maktab o‘qituvchilari ta'lim vazirlari bilan bir qatorda panel sessiyalarida ishtirok etishdi. O‘zbekistonlik ustoz Durdona Boynazarova jahon pedagoglari nomidan so‘zga chiqdi.",
+        content: `
+            <p><b>UNESCO tarixida ilk bor ustozlar vazirlar panelida: o‘zbekistonlik o‘qituvchi jahon pedagoglari nomidan so‘zga chiqdi</b></p>
+            <p>Joriy yilning 8-11-sentabr kunlari Fransiyaning Parij shahrida “Sun’iy intellekt davrida ta’lim: Faktlar, muammolar, yangi ufqlar" mavzusida YUNESKOning Raqamli ta’lim haftaligi — 2026 bo‘lib o‘tdi.</p>
+            <p>Unda dunyoning qator mamlakatlaridan kelgan pedagoglar, ekspertlar va ta‘lim sohasi xodimlari, xususan ISHONCH — Vision 2030 loyihasi mentorlari ishtirok etishdi.</p>
+            <p>Tadbirlar davomida sun‘iy intellekt, raqamli ta‘lim va kelgusi rejalarga bag‘ishlangan muhokamalar bo‘lib o‘tdi.</p>
+            <p>Unda O‘zbekiston delegatsiyasi vakillari so‘zga chiqib, ta'limdagi yangi tendensiyalar, sohada raqamli texnologiyalardan foydalanish, shuningdek, mamlakatimizda amalga oshirilayotgan islohotlar, ta‘limga e‘tibor va ta‘limda sun‘iy intellekt yo‘nalishidagi tajribalar haqida so‘z yuritishdi.</p>
+            <p>Ta‘kidlash joiz: 15 yildan beri UNESCOning Parijdagi Bosh qarorgohida o‘tkazib kelinayotgan Raqamli ta’lim haftaligi tarixida ilk bor maktab o‘qituvchilari ta'lim vazirlari bilan bir qatorda panel sessiyalarida ishtirok etishdi.</p>
+            <p>Bunda o‘zbekistonlik ustoz — Durdona Boynazarova butun dunyo ustozlari nomidan so’zga chiqib, ta’limda sun’iy intellekt, bu boradagi siyosatni ishlab chiqishda ustozlarning roli haqida so‘z yuritdi.</p>
+            <p>Shuningdek, Behruz Ruziyev va Sevara Shamsiyevalar tadbirda o‘z taqdimotlari bilan qatnashishdi.</p>
+        `
+    },
+    {
+        id: 14,
+        title: "Chavondozlik mahorat maktabi bilan hamkorlik",
+        date: "11 Sentyabr, 2026",
+        category: "Hamkorlik",
+        image: "/images/ot_0.jpg",
+        images: ["/images/ot_0.jpg"],
+        video: "/images/video3.mp4",
+        desc: "Termiz shahridagi Prezident maktabi Chavandozlik mahorat maktabi hamda Turon yakka kurash federatsiyalari bilan hamkorlik aloqalarini yo‘lga qo‘ydi.",
+        content: `
+            <p>Termiz shahridagi Prezident maktabi Chavandozlik mahorat maktabi hamda Turon yakka kurash federatsiyalari bilan tuzilgan hamkorlikdan videolavha.</p>
+            <p>Bizni kuzatib boring!</p>
+        `
+    },
+    {
+        id: 15,
+        title: "Ta'lim sohasidagi islohotlar: “Ta’limga bekorga eng ishongan kadrimni olib kelmadim” — Shavkat Mirziyoyev",
+        date: "12 Oktyabr, 2026",
+        category: "Islohotlar",
+        image: "/images/yangilik_0.jpg",
+        images: ["/images/yangilik_0.jpg"],
+        desc: "Prezident Yangi Toshkentda o‘tkazilgan uchrashuv davomida Bosh vazirning birinchi o‘rinbosari — ta’lim va ilm-fan vaziri haqida to‘xtalib o‘tdi.",
+        content: `
+            <p>❗️<b>“Ta’limga bekorga eng ishongan kadrimni olib kelmadim” — Shavkat Mirziyoyev</b></p>
+            <p>Prezident Yangi Toshkentda o‘tkazilgan uchrashuv davomida O‘zbekiston Respublikasi Bosh vazirining birinchi o‘rinbosari — ta’lim va ilm-fan vaziri Erkinjon Turdimov haqida to‘xtalib o‘tdi. Bu haqda tadbirda ishtirok etgan “Daryo” muxbiri <a href="https://t.me/daryo_live/148051" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">xabar berdi</a>.</p>
+            <p>“Son ko‘paydi, sifat esa kam. Bundan keyin har bir universitet kim uchun qanday kadr tayyorlashini o‘zi uchun aniq belgilab olishi kerak. To‘rtta viloyatga hokim bo‘lgan odamni Ta’lim vazirligiga bekorga olib kelmadim”, — dedi prezident.</p>
+        `
+    },
+    {
+        id: 16,
+        title: "«OVOZ» — G‘oyalar minbari loyihasi uchun ro‘yxatdan o‘tish boshlandi",
+        date: "13 Oktyabr, 2026",
+        category: "Loyiha",
+        image: "/images/yangilik_1.jpg",
+        images: ["/images/yangilik_1.jpg"],
+        desc: "Ixtisoslashtirilgan ta'lim muassasalari agentligi tizimida o‘quvchilar uchun «OVOZ» intellektual ma’ruzalar loyihasi uchun ro‘yxatdan o‘tish boshlandi.",
+        content: `
+            <p>Ixtisoslashtirilgan ta'lim muassasalari agentligi tizimida o‘quvchilarning intellektual salohiyati, mustaqil fikrlashi va notiqlik mahoratini rivojlantirishga qaratilgan «OVOZ» intellektual ma’ruzalar loyihasi uchun ro‘yxatdan o‘tish boshlandi. TED va TED-Ed formatlaridan ilhomlangan loyiha yoshlarning dolzarb masalalar yuzasidan o‘z qarashlarini erkin ifoda etishi, yangi g‘oyalarni ilgari surishi va ularni keng auditoriyaga yetkazishi uchun imkoniyat yaratadi.</p>
+            <p>Ishtirokchilar raqamli texnologiyalar va innovatsiyalar, tarix va shaxsiyat, shaxsiy qarashlar hamda jamiyat va maktab hayotiga oid yo‘nalishlarda o‘z g‘oyalarini taqdim etishlari mumkin. Loyihaning asosiy maqsadi — yoshlarning fikrlash madaniyati, nutq ko‘nikmalari va o‘z g‘oyalarini asosli ravishda ifoda etish qobiliyatini rivojlantirish, shuningdek, ularning tashabbuslarini qo‘llab-quvvatlashdir.</p>
+            <p>Ro‘yxatdan o‘tish 17-oktabrga qadar davom etadi. Ishtirok etish shartlari va barcha talablar bilan quyidagi <a href="https://ovoz.prteam.uz/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">havola</a> orqali tanishish mumkin.</p>
+            <p>Qo‘shimcha ma’lumot uchun: <b>@ovozadm1n</b></p>
+        `
+    },
+    {
+        id: 17,
+        title: "“Rahbar kubogi” sport musobaqasining Surxondaryo viloyati bosqichi bo‘lib o‘tdi",
+        date: "13 Oktyabr, 2026",
+        category: "Sport",
+        image: "/images/school.jpg",
+        images: ["/images/school.jpg"],
+        video: "/images/video4.mp4",
+        desc: "Termiz shahridagi Prezident maktabida Ixtisoslashtirilgan ta’lim muassasalari agentligi tizimidagi maktablar o‘rtasida “Rahbar kubogi” sport musobaqasi o‘tkazildi.",
+        content: `
+            <p>Ixtisoslashtirilgan ta’lim muassasalari agentligi tizimidagi Termiz shahridagi Prezident maktabida Ixtisoslashtirilgan ta’lim muassasalari agentligi tizimidagi maktablar o‘rtasida <b>“Rahbar kubogi”</b> sport musobaqasining Surxondaryo viloyati bosqichi bo‘lib o‘tdi.</p>
+            <p>Ushbu nufuzli sport musobaqasida o‘quvchilar sportning bir qancha turlari bo‘yicha o‘z mahorat va chaqqonliklarini namoyish etib, o‘zaro bellashdilar.</p>
+        `
+    },
+    {
+        id: 18,
+        title: "Termiz garnizoni harbiy xizmatchisi bilan “Uch avlod uchrashuvi” tadbiri bo‘lib o‘tdi",
+        date: "13 Oktyabr, 2026",
+        category: "Tadbir",
+        image: "/images/school.jpg",
+        images: ["/images/school.jpg"],
+        video: "/images/video5.mp4",
+        desc: "Termiz shahridagi Prezident maktabida Termiz garnizoni harbiy xizmatchisi, faxriylar hamda o‘quvchi-yoshlar ishtirokida “Uch avlod uchrashuvi” tadbiri bo‘lib o‘tdi.",
+        content: `
+            <p>Termiz shahridagi Prezident maktabida Termiz garnizoni harbiy xizmatchisi, faxriylar hamda o‘quvchi-yoshlar ishtirokida <b>“Uch avlod uchrashuvi”</b> tadbiri bo‘lib o‘tdi.</p>
+            <p>Samimiy muloqot va o‘zaro tajriba almashish ruhida o‘tgan uchrashuvda faxriylar mustaqillik yillarida mamlakatimiz erishgan yutuqlar, boy hayotiy tajribalari hamda samarali mehnat faoliyati haqida so‘zlab berdilar.</p>
+            <p>Shuningdek, yosh avlod vakillariga chuqur bilim olish, zamonaviy kasb-hunarlarni puxta egallash, yurt ravnaqi yo‘lida munosib hissa qo‘shish va Vatanga sadoqatli farzand bo‘lib kamol topish yuzasidan qimmatli tavsiyalar berildi.</p>
+            <p>Bunday uchrashuvlar avlodlar o‘rtasidagi mehr-oqibat, hurmat va hamjihatlikni mustahkamlash, yoshlarda milliy qadriyatlarga sadoqat hamda vatanparvarlik tuyg‘ularini yanada yuksaltirishga xizmat qiladi.</p>
+        `
+    },
+    {
+        id: 19,
+        title: "“Zukko kitobxon” tanlovining yangi mavsumiga start berildi",
+        date: "13 Oktyabr, 2026",
+        category: "Tanlov",
+        image: "/images/yangilik_3.jpg",
+        images: ["/images/yangilik_3.jpg"],
+        desc: "Termiz shahridagi Prezident maktabida an’anaviy “Zukko kitobxon” tanlovining yangi mavsum saralash bosqichiga start berildi.",
+        content: `
+            <blockquote class="italic text-slate-600 border-l-4 border-[#0088cc] pl-4 my-3 bg-slate-50 py-2.5 rounded-r">
+                Agar yolg'iz esang, hamdam kitobdir,<br/>
+                Bilim subhidagi nur ham kitobdir.<br/>
+                <span class="text-xs font-semibold not-italic block mt-1.5 text-slate-500">— Abdurahmon Jomiy</span>
+            </blockquote>
+            <p>Termiz shahridagi Prezident maktabida <b>“Zukko kitobxon”</b> tanlovining yangi mavsumiga start berildi!</p>
+            <p>Har yili o‘tkazilishi an’anaga aylangan ushbu tanlovda faol ishtirok etish uchun barcha kitobxon, zukko yoshlarimizni chorlab qolamiz.</p>
+            <p>Tanlovning joriy mavsum saralash bosqichiga <b>19-noyabr</b> kuni start beriladi.</p>
+            <div class="my-4">
+                <a href="https://telegra.ph/Termiz-shahridagi-Prezident-maktabida-otkaziladigan-Zukko-kitobxon-tanlovi-nizomi-10-09" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white bg-[#0088cc] hover:bg-[#0077b3] px-4 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-sm hover:shadow">
+                    Tanlov nizomi bilan tanishing ➡️
+                </a>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+                <p class="font-semibold text-slate-800 mb-2">Termiz shahridagi Prezident maktabining rasmiy ijtimoiy tarmoq sahifalari:</p>
+                <div class="flex flex-wrap items-center gap-3 text-sm">
+                    <a href="http://t.me/pmtermiz" target="_blank" rel="noopener noreferrer" class="text-[#0088cc] hover:underline font-semibold flex items-center gap-1">
+                        Telegram
+                    </a> | 
+                    <a href="https://www.instagram.com/pmtermiz/?r=nametag" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:underline font-semibold flex items-center gap-1">
+                        Instagram
+                    </a> | 
+                    <a href="https://m.facebook.com/pmtermiz" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline font-semibold flex items-center gap-1">
+                        Facebook
+                    </a> | 
+                    <a href="https://www.youtube.com/channel/UCFZmnpi6L7K5GgPSYgKB_hA" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:underline font-semibold flex items-center gap-1">
+                        YouTube
+                    </a>
+                </div>
+            </div>
+        `
+    },
+    {
+        id: 20,
+        title: "O‘zbekiston Respublikasi Prezidenti Farmoni: Ta’lim va ilm-fan vaziri lavozimi kiritildi",
+        date: "13 Oktyabr, 2026",
+        isToday: true,
+        category: "Islohotlar",
+        image: "/images/yangilik_4.jpg",
+        images: ["/images/yangilik_4.jpg", "/images/durdona_0.jpg", "/images/durdona_1.jpg"],
+        desc: "O‘zbekiston Respublikasi Prezidentining “O‘zbekiston Respublikasi Vazirlar Mahkamasining ijro etuvchi tuzilmasini yanada takomillashtirish chora-tadbirlari to‘g‘risida”gi Farmoni qabul qilindi.",
+        content: `
+            <p>✅ O‘zbekiston Respublikasi Prezidentining <b>“O‘zbekiston Respublikasi Vazirlar Mahkamasining ijro etuvchi tuzilmasini yanada takomillashtirish chora-tadbirlari to‘g‘risida”</b>gi Farmoni qabul qilindi. Unga ko‘ra, Vazirlar Mahkamasi ijro etuvchi tuzilmasida:</p>
+            <ul class="list-disc pl-5 space-y-1.5 my-3 text-slate-700">
+                <li>O‘zbekiston Respublikasi Bosh vazirining birinchi o‘rinbosari — ta’lim va ilm-fan vaziri lavozimi kiritildi;</li>
+                <li>12 nafar shtat birligidan iborat bo‘lgan Ta’lim, ilm-fan va sog‘liqni saqlash masalalari kotibiyati tashkil qilindi.</li>
+            </ul>
+            <p class="font-semibold text-slate-800 mt-4">👉 Vazirlar Mahkamasi Ta’lim, ilm-fan va sog‘liqni saqlash masalalari kotibiyatining:</p>
+            <ul class="list-disc pl-5 space-y-1.5 my-2 text-slate-700">
+                <li>5 ta shtat birligi — Vazirlar Mahkamasining Ijtimoiy rivojlanish masalalari bo‘limi hisobidan;</li>
+                <li>7 ta shtat birligi — qayta tashkil etilgan Maktabgacha va maktab ta’limi vazirligi hamda Oliy ta’lim, fan va innovatsiyalar vazirligining shtat birliklarini maqbullashtirish hisobidan shakllantiriladi.</li>
+            </ul>
+            <p class="font-semibold text-slate-800 mt-4">👉 Farmonga ko‘ra:</p>
+            <p>Bosh vazirning birinchi o‘rinbosari — ta’lim va ilm-fan vaziri respublika ijro etuvchi hokimiyat organlari — vazirliklar, qo‘mitalar, agentliklar va inspeksiyalar rahbarlari hamda Qoraqalpog‘iston Respublikasi Vazirlar Kengashi Raisi, viloyatlar va Toshkent shahar hokimlarining ta’lim, ilm-fan va sog‘liqni saqlash sohalarida zimmasiga yuklatilgan vazifa va funksiyalarni amalga oshirish bo‘yicha faoliyatiga vakolati doirasida umumiy rahbarlik qiladi, ularni muvofiqlashtiradi.</p>
+            <div class="mt-5 p-4 bg-blue-50/80 border border-blue-200/80 rounded-xl">
+                <a href="https://lex.uz/uz/pdfs/8530785" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#0088cc] hover:text-[#006699] font-bold text-sm md:text-base transition-colors hover:underline">
+                    <span class="material-symbols-outlined text-[22px]">description</span>
+                    👉 Farmonning to‘liq matni bilan tanishing (lex.uz)
+                </a>
+            </div>
         `
     }
 ];
