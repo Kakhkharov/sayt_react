@@ -95,6 +95,57 @@ const ArticleImageSlider = ({ images, title }) => {
     );
 };
 
+
+const ArticleVideoPlayer = ({ videos, mainVideo, poster }) => {
+    const videoList = (videos && videos.length > 0) ? videos : (mainVideo ? [mainVideo] : []);
+    const [currentVidIdx, setCurrentVidIdx] = useState(0);
+
+    if (videoList.length === 0) return null;
+
+    return (
+        <div className="space-y-3">
+            <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-lg bg-black shrink-0 border border-slate-200">
+                <video 
+                    key={videoList[currentVidIdx]}
+                    controls 
+                    playsInline
+                    preload="metadata"
+                    poster={poster ? getAssetPath(poster) : undefined}
+                    className="w-full h-full object-contain"
+                >
+                    <source src={getAssetPath(videoList[currentVidIdx])} type="video/mp4" />
+                    Brauzeringiz videoni qöllab-quvvatlamaydi.
+                </video>
+            </div>
+
+            {videoList.length > 1 && (
+                <div className="flex items-center gap-2 flex-wrap bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                    <span className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1">
+                        <span className="material-symbols-outlined text-[16px] text-[#0088cc]">video_library</span>
+                        Videolar ({videoList.length}):
+                    </span>
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                        {videoList.map((_, idx) => (
+                            <button
+                                key={idx}
+                                type="button"
+                                onClick={() => setCurrentVidIdx(idx)}
+                                className={`px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
+                                    currentVidIdx === idx
+                                        ? 'bg-[#0088cc] text-white shadow-sm scale-102'
+                                        : 'bg-white hover:bg-slate-200 text-slate-700 border border-slate-200'
+                                }`}
+                            >
+                                <span className="material-symbols-outlined text-[15px]">play_circle</span>
+                                {idx + 1}-video lavha
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
 export default function Article() {
     const { id } = useParams();
     const article = newsData.find(item => item.id === parseInt(id)) || newsData[0];
@@ -155,6 +206,12 @@ export default function Article() {
         setTimeout(() => setCopied(false), 2500);
     };
 
+    const hasVideo = Boolean(article.video || (article.videos && article.videos.length > 0));
+    const hasPhotos = Boolean(
+        article.images && 
+        article.images.length > 0 && 
+        (!hasVideo || article.images.length > 1 || article.images[0] !== article.image)
+    );
     const imagesToDisplay = article.images && article.images.length > 0 
         ? article.images 
         : [article.image];
@@ -191,19 +248,23 @@ export default function Article() {
                         </div>
                     </div>
 
-                    {/* Render Video Player if article.video exists, otherwise Image Slider */}
-                    {article.video ? (
-                        <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-lg bg-black shrink-0 border border-slate-200">
-                            <video 
-                                controls 
-                                playsInline
-                                preload="metadata"
-                                poster={article.image ? getAssetPath(article.image) : undefined}
-                                className="w-full h-full object-contain"
-                            >
-                                <source src={getAssetPath(article.video)} type="video/mp4" />
-                                Brauzeringiz videoni qöllab-quvvatlamaydi.
-                            </video>
+                    {/* Render Video Player if article has video/videos */}
+                    {hasVideo ? (
+                        <div className="space-y-6">
+                            <ArticleVideoPlayer 
+                                videos={article.videos} 
+                                mainVideo={article.video} 
+                                poster={article.image} 
+                            />
+                            {hasPhotos && (
+                                <div className="space-y-2 pt-2">
+                                    <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+                                        <span className="material-symbols-outlined text-[#0088cc] text-[16px]">photo_library</span>
+                                        Fotolavhalar:
+                                    </h4>
+                                    <ArticleImageSlider images={imagesToDisplay} title={article.title} />
+                                </div>
+                            )}
                         </div>
                     ) : (
                         <ArticleImageSlider images={imagesToDisplay} title={article.title} />

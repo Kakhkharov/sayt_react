@@ -4,6 +4,42 @@ import { getAssetPath } from '../utils/assets';
 
 const videoData = [
     {
+        id: 13,
+        title: "Ilm, innovatsiya va hamkorlik: Prezident maktabi Denov institutiga tashrif buyurdi",
+        date: "2026-11-23T10:00:00",
+        duration: "00:58",
+        thumbnail: "/images/roadshow_00.jpg",
+        video: "/images/roadshow_video.mp4",
+        views: "1.6k"
+    },
+    {
+        id: 14,
+        title: "18-noyabr — O‘zbekiston Respublikasi Davlat bayrog‘i qabul qilingan kun!",
+        date: "2026-11-18T10:00:00",
+        duration: "02:47",
+        thumbnail: "/images/bayroq00.jpg",
+        video: "/images/bayroq.mp4",
+        views: "1.9k"
+    },
+    {
+        id: 15,
+        title: "Davlat bayrog‘i kuni munosabati bilan harbiy orkestr bayram konserti",
+        date: "2026-11-18T11:00:00",
+        duration: "01:54",
+        thumbnail: "/images/bayroq00.jpg",
+        video: "/images/bayroq2.mp4",
+        views: "1.4k"
+    },
+    {
+        id: 16,
+        title: "Harbiy texnika va qurol-aslahalar ko‘rgazmasi",
+        date: "2026-11-18T11:30:00",
+        duration: "00:09",
+        thumbnail: "/images/bayroq3.jpg",
+        video: "/images/bayroq4.mp4",
+        views: "1.1k"
+    },
+    {
         id: 11,
         title: "Prezident maktablari tarixida ilk mukofot",
         date: "2026-11-11T10:00:00",

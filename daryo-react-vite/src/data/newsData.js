@@ -607,6 +607,137 @@ const rawNewsData = [
             <p>Tadbir davomida öquvçilar jamoalarga bölinib, özlari tanlagan xalqlar va mamlakatlar madaniyatini namoyiş etdilar. Har bir jamoa öz taqdimotlari orqali turli xalqlarning milliy liboslari, an’anaviy taomlari, musiqa va raqslari, tarixiy obidalari, anʼana va urf-odatlari haqida qiziqarli ma’lumotlar bilan örtoqlaşdi.</p>
             <p>Körgazma öquvçilarga nafaqat turli xalqlarning boy madaniy merosi bilan yaqindan tanişiş, balki özaro hurmat, bağrikenglik va madaniyatlararo muloqot könikmalarini rivojlantiriş imkonini ham berdi.</p>
         `
+    },
+    {
+        id: 29,
+        title: "Vakansiya: Termiz shahridagi Prezident maktabi jamoasiga malakali va tashabbuskor pedagoglarni taklif etadi!",
+        date: "18 Noyabr, 2026",
+        category: "E'lonlar",
+        image: "/images/vakansiya.jpg",
+        images: [
+          "/images/vakansiya.jpg"
+],
+        desc: "Termiz shahridagi Prezident maktabi jamoasiga malakali va tashabbuskor pedagoglarni taklif etadi! Biologiya, uslubchi, robototexnika, shaxmat va laboratoriya yo'nalishlarida vakant o'rinlar mavjud.",
+        content: `<div class="space-y-6 not-prose">
+                <p class="text-base md:text-lg font-semibold text-slate-800 leading-relaxed">
+                    Termiz shahridagi Prezident maktabi jamoasiga malakali va tashabbuskor pedagoglarni taklif etadi!
+                </p>
+
+                <div class="bg-gradient-to-br from-blue-50/90 via-sky-50/50 to-slate-50 border border-blue-100 rounded-2xl p-5 md:p-6 shadow-xs">
+                    <h3 class="text-base md:text-lg font-extrabold text-slate-900 mb-4 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-[#0088cc]"></span>
+                        Quyidagi yo‘nalishlar bo'yicha vakant o'rinlar mavjud:
+                    </h3>
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-slate-100 shadow-xs hover:border-blue-200 transition-colors">
+                            <span class="text-blue-500 font-bold text-lg leading-none mt-0.5 select-none">🔹</span>
+                            <div class="text-slate-700 text-sm md:text-base">
+                                <b class="text-slate-900 font-bold">Biologiya fani o'qituvchisi</b> — birinchi hamda oliy toifali (til bilish darajasi kamida B2)
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-slate-100 shadow-xs hover:border-blue-200 transition-colors">
+                            <span class="text-blue-500 font-bold text-lg leading-none mt-0.5 select-none">🔹</span>
+                            <div class="text-slate-700 text-sm md:text-base">
+                                <b class="text-slate-900 font-bold">Uslubchi (pedagog)</b> — hujjatlar bilan mukammal ishlash ko‘nikmasiga ega bo‘lishi lozim
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-slate-100 shadow-xs hover:border-blue-200 transition-colors">
+                            <span class="text-blue-500 font-bold text-lg leading-none mt-0.5 select-none">🔹</span>
+                            <div class="text-slate-700 text-sm md:text-base">
+                                <b class="text-slate-900 font-bold">To'garak rahbari</b> — robototexnika bo'yicha
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-slate-100 shadow-xs hover:border-blue-200 transition-colors">
+                            <span class="text-blue-500 font-bold text-lg leading-none mt-0.5 select-none">🔹</span>
+                            <div class="text-slate-700 text-sm md:text-base">
+                                <b class="text-slate-900 font-bold">To'garak rahbari</b> — shaxmat bo'yicha
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-slate-100 shadow-xs hover:border-blue-200 transition-colors">
+                            <span class="text-blue-500 font-bold text-lg leading-none mt-0.5 select-none">🔹</span>
+                            <div class="text-slate-700 text-sm md:text-base">
+                                <b class="text-slate-900 font-bold">Fizika fani laboranti</b>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-slate-100 shadow-xs hover:border-blue-200 transition-colors">
+                            <span class="text-blue-500 font-bold text-lg leading-none mt-0.5 select-none">🔹</span>
+                            <div class="text-slate-700 text-sm md:text-base">
+                                <b class="text-slate-900 font-bold">Yoshlarni innovatsion ijodkorlik laboranti</b> — Informatika yoki amaliy matematika mutaxassisi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-amber-50/80 border border-amber-200/70 rounded-xl text-amber-900 text-sm md:text-base leading-relaxed">
+                    Agar siz zamonaviy ta'lim muhitida faoliyat yuritish, iqtidorli o'quvchilar bilan ishlash va professional jamoaning bir qismi bo'lishni istasangiz, biz sizni kutamiz!
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-3">
+                    <p class="text-slate-700 text-sm md:text-base font-medium">
+                        Nomzodlar joriy yilning <b>25-noyabr</b> sanasiga qadar soʻralgan maʼlumotlarni quyidagi manzilga yuborishlari talab etiladi:
+                    </p>
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <span class="text-slate-500 font-semibold text-sm">Bog‘lanish:</span>
+                        <a href="https://t.me/Aziza1114" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-[#0088cc] hover:bg-[#0077b5] text-white font-bold text-sm rounded-lg shadow-sm transition-all hover:scale-105">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                            @Aziza1114
+                        </a>
+                    </div>
+                </div>
+            </div>`
+    },
+    {
+        id: 30,
+        title: "18-noyabr — O‘zbekiston Respublikasi Davlat bayrog‘i qabul qilingan kun!",
+        date: "18 Noyabr, 2026",
+        category: "Ma'naviyat",
+        image: "/images/bayroq00.jpg",
+        images: [
+          "/images/bayroq00.jpg",
+          "/images/bayroq3.jpg"
+],
+        video: "/images/bayroq.mp4",
+        videos: ["/images/bayroq.mp4","/images/bayroq2.mp4","/images/bayroq4.mp4"],
+        desc: "Davlatimiz bayrog‘i qabul qilinganining 35 yilligi munosabati bilan Surxondaryo viloyati harbiy orkestri hamda Termiz shahridagi Prezident maktabi orkestr jamoalari hamkorligida ko‘tarinki ruhda bayram konsert dasturi tashkil etildi.",
+        content: `<p>Davlatimiz bayrog‘i qabul qilinganining 35 yilligi munosabati bilan Surxondaryo viloyati harbiy orkestri hamda Termiz shahridagi Prezident maktabi orkestr jamoalari hamkorligida ko‘tarinki ruhda bayram konsert dasturi tashkil etildi.</p>
+            <p>Tantanali tadbirda Surxondaryo viloyati Milliy gvardiya bo‘linmasi vakillari, Surxondaryo faxriylar kengashi a’zolari hamda maktab jamoasi ishtirok etishdi.</p>
+            <p>Vatanparvarlik ruhidagi kuy-qo‘shiqlar va musiqiy chiqishlar bayramga o‘zgacha shukuh bag‘ishlab, ishtirokchilarga unutilmas taassurotlar ulashdi.</p>
+            <p>Bayram konserti yakunida o‘quvchilar uchun harbiy texnika va qurol-aslahalar ko‘rgazmasi tashkil etildi. Ko‘rgazma davomida yoshlar harbiy soha, harbiy texnikalar va Vatan himoyachilarining sharafli faoliyati bilan yaqindan tanishish imkoniga ega bo‘ldilar.</p>`
+    },
+    {
+        id: 31,
+        title: "Ilm, innovatsiya va hamkorlik: Prezident maktabi Denov institutiga tashrif buyurdi",
+        date: "23 Noyabr, 2026",
+        category: "Taşrif",
+        image: "/images/roadshow_00.jpg",
+        images: [
+          "/images/roadshow_00.jpg",
+          "/images/roadshow_01.jpg"
+],
+        video: "/images/roadshow_video.mp4",
+        desc: "Termiz shahridagi Prezident maktabi o‘quvchilari maktab maslahatchisi Azizbek Asamov hamrohligida Denov tadbirkorlik va pedagogika institutida bo‘lib, fizika va kimyo laboratoriyalari, o‘quv jarayonlari bilan tanishdilar hamda o‘zaro hamkorlik memorandumi imzolandi.",
+        content: `<p>Termiz shahridagi Prezident maktabi o‘quvchilari maktab maslahatchisi Azizbek Asamov hamrohligida Denov tadbirkorlik va pedagogika institutida bo‘lib, fizika va kimyo laboratoriyalari, o‘quv jarayonlari bilan tanishdilar hamda o‘zaro hamkorlik memorandumi imzolandi.</p>
+            <p>Shu bilan birga, o‘quvchilar institutda o‘tkazilgan IT Roadshow tadbirida faol qatnashib, sovrinli o‘rinlarni qo‘lga kiritdilar, AI, freelancing va startaplar bo‘yicha yetakchi kompaniyalar spikerlarining ma’ruzalarini tingladilar.</p>`
+    },
+    {
+        id: 32,
+        title: "Denov Tadbirkorlik va Pedagogika universitetida IT Community of Uzbekistan tomonidan navbatdagi Roadshow tadbiri tashkil etildi",
+        date: "23 Noyabr, 2026",
+        category: "Texnologiya",
+        image: "/images/roadshow_00.jpg",
+        images: [
+          "/images/roadshow_00.jpg",
+          "/images/roadshow_01.jpg",
+          "/images/roadshow_02.jpg",
+          "/images/roadshow_03.jpg",
+          "/images/roadshow_04.jpg",
+          "/images/roadshow_05.jpg",
+          "/images/roadshow_06.jpg"
+],
+        desc: "Denov Tadbirkorlik va Pedagogika universitetida IT Community of Uzbekistan tomonidan navbatdagi Roadshow tadbiri tashkil etildi. Tadbirda Termiz shahridagi Prezident maktabi o‘quvchilari ham faol ishtirok etib, bir qancha sovrinli o‘rinlarni qo‘lga kiritishdi!",
+        content: `<p>Denov Tadbirkorlik va Pedagogika universitetida IT Community of Uzbekistan tomonidan navbatdagi Roadshow tadbiri tashkil etildi. Tadbirda Termiz shahridagi Prezident maktabi o‘quvchilari ham faol ishtirok etib, o‘z bilim va salohiyatlarini namoyon etishdi hamda bir qancha sovrinli o‘rinlarni qo‘lga kiritishdi!</p>
+            <p>Roadshow doirasida Huawei, Uzum, School 21, WomanTech kabi yetakchi kompaniya va tashkilotlar vakillari ham ishtirok etib, o‘z tajribalari bilan o‘rtoqlashdilar. Shuningdek, spikerlar tomonidan sun’iy intellekt (AI), freelancing, startaplar, zamonaviy texnologiyalar va IT sohasidagi istiqbolli imkoniyatlar haqida qiziqarli ma’ruzalar taqdim etildi.</p>
+            <p>Bunday tadbirlar yoshlarning texnologiyalarga bo‘lgan qiziqishini oshirish, soha mutaxassislari bilan muloqot qilish, yangi bilim va tajribalar orttirish uchun muhim platforma hisoblanadi.</p>`
     }
 ];
 
