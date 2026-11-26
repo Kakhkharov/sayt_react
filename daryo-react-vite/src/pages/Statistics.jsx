@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHeroBanner from '../components/PageHeroBanner';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, Cell } from 'recharts';
-import { Users, GraduationCap, Globe, Calendar, Award, CheckCircle } from 'lucide-react';
+import { User, GraduationCap, Globe, Calendar, Award, CheckCircle } from 'lucide-react';
 
 const Reveal = ({ children, delay = 0, className = "", type = "fade-up" }) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -221,7 +221,7 @@ export default function Statistics() {
                         <Reveal type="fade-up" delay={50}>
                             <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:border-slate-300 transition-all flex items-center gap-5">
                                 <div className="w-16 h-16 rounded-2xl bg-[#ecf7f4] border border-[#d2ede5] flex items-center justify-center shrink-0">
-                                    <Users className="w-7 h-7 text-[#1e3a47]" />
+                                    <User className="w-7 h-7 text-[#1e3a47] fill-[#1e3a47]" />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-4xl md:text-5xl font-black text-[#0a1b3f] tracking-tight leading-none">
@@ -238,7 +238,7 @@ export default function Statistics() {
                         <Reveal type="fade-up" delay={150}>
                             <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:border-slate-300 transition-all flex items-center gap-5">
                                 <div className="w-16 h-16 rounded-2xl bg-[#ecf7f4] border border-[#d2ede5] flex items-center justify-center shrink-0">
-                                    <GraduationCap className="w-7 h-7 text-[#1e3a47]" />
+                                    <GraduationCap className="w-7 h-7 text-[#1e3a47] fill-[#1e3a47]" />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-4xl md:text-5xl font-black text-[#0a1b3f] tracking-tight leading-none">
