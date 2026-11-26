@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageHeroBanner from '../components/PageHeroBanner';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, Cell } from 'recharts';
+import { Users, GraduationCap, Globe, Calendar, Award, CheckCircle } from 'lucide-react';
 
 const Reveal = ({ children, delay = 0, className = "", type = "fade-up" }) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -118,6 +119,24 @@ const GradeProgressBar = ({ label, count, total, colorGradient, icon = null, del
 export default function Statistics() {
     const [selectedLevelTab, setSelectedLevelTab] = useState("all");
 
+    // Section 2: Sinflar kesimida o'quvchilar soni
+    const classWiseStudents = [
+        { className: "5-01: Al-Xorazmiy", count: 12 },
+        { className: "5-02: Al-Xorazmiy", count: 12 },
+        { className: "6-01: Mirzo Ulug'bek", count: 12 },
+        { className: "6-02: Mirzo Ulug'bek", count: 12 },
+        { className: "7-01: Abu Ali ibn Sino", count: 11 },
+        { className: "7-02: Abu Ali ibn Sino", count: 12 },
+        { className: "8-01: Ahmad al-Farg'oniy", count: 12 },
+        { className: "8-02: Ahmad al-Farg'oniy", count: 12 },
+        { className: "9-01: Abu Rayhon Beruniy", count: 12 },
+        { className: "9-02: Abu Rayhon Beruniy", count: 12 },
+        { className: "10-01: Abu Nasr Forobiy", count: 12 },
+        { className: "10-02: Abu Nasr Forobiy", count: 12 },
+        { className: "11-01: Alisher Navoiy", count: 11 },
+        { className: "11-02: Alisher Navoiy", count: 11 },
+    ];
+
     // Historical Data for SAT
     const satHistoricalData = [
         { year: '2023', '1400+': 2, '1300-1400': 5, '1200-1300': 4, '<1200': 1 },
@@ -173,7 +192,124 @@ export default function Statistics() {
             <main className="max-w-[1400px] mx-auto relative z-10 px-4 md:px-8 pt-8 md:pt-12 flex flex-col gap-12 md:gap-16">
 
                 {/* ========================================================================= */}
-                {/* SECTION 1: IELTS & SAT Natijalari (Diagrammalar) */}
+                {/* TOP HEADER: OXIRGI YANGILANISH SANASI (dd-mm-yyyy) */}
+                {/* ========================================================================= */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200/80">
+                    <div>
+                        <span className="text-[#0088cc] font-extrabold tracking-wider uppercase text-xs">
+                            Termiz shahridagi Prezident maktabi
+                        </span>
+                        <h2 className="text-2xl md:text-3xl font-black text-[#0a1b3f]">
+                            Maktabning Asosiy Statistik Ko'rsatkichlari
+                        </h2>
+                    </div>
+
+                    {/* O'ng taraf tepa burchagidagi yangilanish sanasi */}
+                    <div className="self-start sm:self-auto inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-slate-200 shadow-sm text-xs font-semibold text-slate-600 hover:border-slate-300 transition-colors">
+                        <Calendar className="w-4 h-4 text-[#0088cc]" />
+                        <span>Oxirgi yangilanish: <strong className="text-slate-900 font-extrabold">26-11-2026</strong></span>
+                    </div>
+                </div>
+
+                {/* ========================================================================= */}
+                {/* SECTION 1: ASOSIY CARDLAR (1-RASMDAGIDEK) */}
+                {/* O'quvchilar: 165 | Pedagoglar: 36 | Xorijiy pedagoglar: 8 (28 mahalliy) */}
+                {/* ========================================================================= */}
+                <section>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {/* Card 1: O'quvchilar (165) */}
+                        <Reveal type="fade-up" delay={50}>
+                            <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:border-slate-300 transition-all flex items-center gap-5">
+                                <div className="w-16 h-16 rounded-2xl bg-[#ecf7f4] border border-[#d2ede5] flex items-center justify-center shrink-0">
+                                    <Users className="w-7 h-7 text-[#1e3a47]" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-4xl md:text-5xl font-black text-[#0a1b3f] tracking-tight leading-none">
+                                        165
+                                    </span>
+                                    <span className="text-sm md:text-base font-bold text-slate-600 mt-2">
+                                        O'quvchilar
+                                    </span>
+                                </div>
+                            </div>
+                        </Reveal>
+
+                        {/* Card 2: Umumiy Pedagoglar (36) */}
+                        <Reveal type="fade-up" delay={150}>
+                            <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:border-slate-300 transition-all flex items-center gap-5">
+                                <div className="w-16 h-16 rounded-2xl bg-[#ecf7f4] border border-[#d2ede5] flex items-center justify-center shrink-0">
+                                    <GraduationCap className="w-7 h-7 text-[#1e3a47]" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-4xl md:text-5xl font-black text-[#0a1b3f] tracking-tight leading-none">
+                                        36
+                                    </span>
+                                    <span className="text-sm md:text-base font-bold text-slate-600 mt-2">
+                                        Pedagoglar
+                                    </span>
+                                </div>
+                            </div>
+                        </Reveal>
+
+                        {/* Card 3: Xorijiy pedagoglar (8) va 28 mahalliy pedagog */}
+                        <Reveal type="fade-up" delay={250}>
+                            <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:border-slate-300 transition-all flex items-center gap-5">
+                                <div className="w-16 h-16 rounded-2xl bg-[#ecf7f4] border border-[#d2ede5] flex items-center justify-center shrink-0">
+                                    <Globe className="w-7 h-7 text-[#1e3a47]" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-4xl md:text-5xl font-black text-[#0a1b3f] tracking-tight leading-none">
+                                        8
+                                    </span>
+                                    <span className="text-sm md:text-base font-bold text-slate-600 mt-1">
+                                        Xorijiy pedagoglar
+                                    </span>
+                                    <span className="text-xs font-semibold text-slate-400 mt-0.5">
+                                        28 mahalliy pedagog
+                                    </span>
+                                </div>
+                            </div>
+                        </Reveal>
+                    </div>
+                </section>
+
+                {/* ========================================================================= */}
+                {/* SECTION 2: O'QUVCHILAR SINFLAR KESIMIDA (3-RASMDAGIDEK) */}
+                {/* Har bir sinfda 12 nafardan, 7-01, 11-01, 11-02 da 11 nafardan o'quvchi */}
+                {/* ========================================================================= */}
+                <section>
+                    <Reveal type="fade-up">
+                        <div className="mb-6">
+                            <span className="text-emerald-600 font-extrabold tracking-wider uppercase text-xs">
+                                O'QUVCHILAR SINFLAR KESIMIDA
+                            </span>
+                            <h3 className="text-2xl md:text-3xl font-black text-[#0a1b3f] mt-1">
+                                Har bir sinfdagi o'quvchilar soni
+                            </h3>
+                        </div>
+                    </Reveal>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+                        {classWiseStudents.map((item, idx) => (
+                            <Reveal key={idx} type="fade-up" delay={idx * 30}>
+                                <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-[0_2px_14px_rgba(0,0,0,0.03)] hover:shadow-md hover:border-slate-200 transition-all">
+                                    <div className="text-xs font-bold text-slate-500 mb-1.5 truncate">
+                                        {item.className}
+                                    </div>
+                                    <div className="text-2xl md:text-3xl font-black text-[#0a1b3f] leading-none mb-1">
+                                        {item.count}
+                                    </div>
+                                    <div className="text-xs font-semibold text-slate-400">
+                                        o'quvchi
+                                    </div>
+                                </div>
+                            </Reveal>
+                        ))}
+                    </div>
+                </section>
+
+                {/* ========================================================================= */}
+                {/* SECTION 3: IELTS & SAT Natijalari (Diagrammalar) */}
                 {/* ========================================================================= */}
                 <section>
                     <Reveal type="fade-up">
@@ -256,7 +392,7 @@ export default function Statistics() {
                 </section>
 
                 {/* ========================================================================= */}
-                {/* SECTION 2: CAMBRIDGE A-LEVEL & AS-LEVEL ANIMATED PROGRESS DIAGRAM (NEW) */}
+                {/* SECTION 4: CAMBRIDGE A-LEVEL & AS-LEVEL ANIMATED PROGRESS DIAGRAM */}
                 {/* ========================================================================= */}
                 <section className="scroll-mt-32">
                     <Reveal type="fade-up">
@@ -504,7 +640,7 @@ export default function Statistics() {
                 </section>
 
                 {/* ========================================================================= */}
-                {/* SECTION 3: 100% Grant Winners */}
+                {/* SECTION 5: 100% Grant Winners */}
                 {/* ========================================================================= */}
                 <section>
                     <Reveal type="fade-up">
@@ -573,7 +709,7 @@ export default function Statistics() {
                 </section>
 
                 {/* ========================================================================= */}
-                {/* SECTION 4: FM Radio Bo'limi */}
+                {/* SECTION 6: FM Radio Bo'limi */}
                 {/* ========================================================================= */}
                 <section>
                     <Reveal type="fade-up">

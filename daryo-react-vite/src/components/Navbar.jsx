@@ -167,6 +167,24 @@ export default function Navbar() {
                     {/* Right Social & Lang */}
                     <div className="flex gap-4 items-center ml-auto">
                         <div className="flex gap-2">
+                            {/* Ichki Mailcow pochta tizimi button (BEFORE FM) */}
+                            <div className="relative group">
+                                <Link 
+                                    to="/mailcow"
+                                    className="bg-white/10 hover:bg-white/20 text-white hover:text-cyan-300 w-7 h-7 rounded flex items-center justify-center transition-all cursor-pointer overflow-hidden group-hover:scale-105"
+                                    title="Ichki Mailcow pochta tizimi"
+                                >
+                                    <svg className="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                    </svg>
+                                </Link>
+
+                                {/* Tooltip */}
+                                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 px-2 py-0.5 bg-slate-900/95 text-cyan-300 text-[10px] font-bold rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all whitespace-nowrap z-50 pointer-events-none border border-cyan-500/30">
+                                    Ichki Mailcow pochta
+                                </div>
+                            </div>
                             {/* Maktab Radiosi FM button (Mobile & Desktop) */}
                             <div className="relative group">
                                 {showRadioGuide && !isRadioPlaying && (

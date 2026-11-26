@@ -16,6 +16,7 @@ import Qabul2026 from './pages/Qabul2026';
 import EmptyPage from './pages/EmptyPage';
 import Results from './pages/Results';
 import AdminDashboard from './pages/admin/AdminDashboard';
+import MailcowLogin from './pages/MailcowLogin';
 import AboutSchool from './pages/AboutSchool';
 import SchoolConstitution from './pages/SchoolConstitution';
 import Statistics from './pages/Statistics';
@@ -38,13 +39,15 @@ function ScrollToTop() {
 function AppContent() {
   const location = useLocation();
   const isAdmin = location.pathname.startsWith('/admin');
-  const hideFooter = isAdmin;
+  const isMailcow = location.pathname.startsWith('/mailcow') || location.pathname.startsWith('/pochta') || location.pathname.startsWith('/mail');
+  const hideFooter = isAdmin || isMailcow;
+  const hideNavbar = isAdmin || isMailcow;
 
   return (
     <div className="flex flex-col min-h-screen w-full max-w-[100vw] overflow-x-hidden">
       <ScrollToTop />
-      {!isAdmin && <MobileAdPopup />}
-      {!isAdmin && <Navbar />}
+      {!hideNavbar && <MobileAdPopup />}
+      {!hideNavbar && <Navbar />}
       <div className="flex-1 flex flex-col">
         <Routes>
           {/* Excluded Pages (Custom layouts without standard subpage hero banner) */}
@@ -86,6 +89,11 @@ function AppContent() {
           {/* Contact Page */}
           <Route path="/aloqa" element={<Contact />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* Ichki Mailcow pochta tizimi */}
+          <Route path="/mailcow" element={<MailcowLogin />} />
+          <Route path="/pochta" element={<MailcowLogin />} />
+          <Route path="/mail" element={<MailcowLogin />} />
 
           {/* Admin & Fallback */}
           <Route path="/admin" element={<AdminDashboard />} />
